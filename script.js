@@ -21,7 +21,11 @@ function fetchAdvice() {
 // Додаємо клас 'animate' для запуску анімації
 function startDiceAnimation() {
     const diceImage = document.querySelector('#dice-button img');
-    diceImage.classList.add('animate');
+    if (diceImage.classList.contains('animate')) {
+        diceImage.classList.remove('animate'); // Видаляємо анімацію якщо вона була
+    }
+      
+    diceImage.classList.add('animate'); // Додаємо анімацію знову
     
     // Знімаємо клас 'animate' після завершення анімації
     setTimeout(() => {

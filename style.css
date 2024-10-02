@@ -71,6 +71,7 @@ h1 {
     width: 24px;
     height: 24px;
     transition: all 0.3 ease ;
+    will-change: transform;
 }
 
 @keyframes rotateDice {
