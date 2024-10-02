@@ -1,0 +1,101 @@
+/* Основні стилі для всього документа */
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: hsl(218, 23%, 16%);
+    padding: 10px 0;
+    color: hsl(193, 38%, 86%);
+}
+  
+
+/* Контейнер для поради */
+.advice-container {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2)
+}
+
+/* Стилі для заголовка з номером поради */
+h1 {
+    font-size: 28px;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 15px;
+}
+
+/* Стилі для тексту поради */
+#advice-text {
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 30px;
+}
+
+/* Кнопка для генерації нової поради */
+#dice-button {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+/* Стилі для іконки кубика всередині кнопки */
+#dice-button img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3 ease ;
+}
+
+
+
+/* Стан наведення для кнопки */
+#dice-button:hover {
+    background-color: hsl(150, 100%, 80%);
+}
+
+/* Адаптивний дизайн для мобільних пристроїв */
+@media (max-width: 375px) {
+    .advice-container {
+        margin: 20px;
+        padding: 15px;
+        width: 95%;
+        /* Зменшення ширини для мобільних */
+    }
+
+    h1 {
+        font-size: 22px;
+        /* Зменшення розміру заголовка */
+    }
+
+    #advice-text {
+        font-size: 22px;
+        /* Зменшення розміру тексту */
+    }
+}
