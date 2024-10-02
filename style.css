@@ -96,7 +96,8 @@ h1 {
 /* Адаптивний дизайн для мобільних пристроїв */
 @media (max-width: 375px) {
     .advice-container {
-        margin: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
         padding: 15px;
         width: 95%;
         /* Зменшення ширини для мобільних */
