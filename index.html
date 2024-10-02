@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <main class="advice-container">
     <!-- Advice ID -->
     <h1>Advice #<span id="advice-id">117</span></h1>
     <!-- Advice text -->
-    <p id="advice-text">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p> 
+    <p id="advice-text">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+    <!-- Advice divider -->
+    <div class="divider">
+      <span></span> <!-- Лівий розділювач -->
+      <div class="vertical-bars"></div> <!-- Вертикальні лінії -->
+      <span></span> <!-- Правий розділювач -->
+    </div>
     <!-- Advice button -->
     <button id="dice-button">
       <img src="./images/icon-dice.svg" alt="Roll for advice" />
     </button>
   </main>
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Serhii Skalevskyi</a>.
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
