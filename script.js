@@ -27,7 +27,7 @@ function startDiceAnimation() {
     setTimeout(() => {
       diceImage.classList.remove('animate');
       fetchAdvice();
-    }, 500); 
+    }, 1000); 
 }
 
 // Додаємо подію на кнопку: при натисканні отримуємо нову пораду
