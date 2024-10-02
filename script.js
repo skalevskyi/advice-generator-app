@@ -18,8 +18,21 @@ function fetchAdvice() {
     });
 }
 
+// Додаємо клас 'animate' для запуску анімації
+function startDiceAnimation() {
+    const diceImage = document.querySelector('#dice-button img');
+    diceImage.classList.add('animate');
+    
+    // Знімаємо клас 'animate' після завершення анімації
+    setTimeout(() => {
+      diceImage.classList.remove('animate');
+      fetchAdvice();
+    }, 1000); 
+}
+
 // Додаємо подію на кнопку: при натисканні отримуємо нову пораду
-diceButton.addEventListener('click', fetchAdvice);
+diceButton.addEventListener('click', startDiceAnimation);
 
 // Викликаємо функцію при завантаженні сторінки, щоб відразу показати одну пораду
-fetchAdvice();
+
+startDiceAnimation();

@@ -73,6 +73,19 @@ h1 {
     transition: all 0.3 ease ;
 }
 
+@keyframes rotateDice {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* Стиль для анімації */
+#dice-button img.animate {
+    animation: rotateDice 1s ease-in-out;
+}
 
 
 /* Стан наведення для кнопки */
